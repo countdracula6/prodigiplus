@@ -497,6 +497,49 @@
     font-size: 20px;
     color: var(--highlight-orange);
   }
+
+  /* Floating Dark/Light Mode Button */
+.theme-toggle-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+    background: var(--primary-blue);
+    color: var(--text-white);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    transition: background-color 0.3s;
+  }
+  
+  .theme-toggle-btn:hover {
+    background: var(--highlight-orange);
+  }
+
+  /* Responsive Navbar */
+@media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+      background: var(--background-black);
+      width: 100%;
+      display: none;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
   
   
   
