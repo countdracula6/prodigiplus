@@ -27,3 +27,12 @@ contactForm.addEventListener("submit", function(event) {
   event.preventDefault();
   contactForm.innerHTML = "<h3>Thank you! We'll get back to you in less than 30 minutes.</h3>";
 });
+
+// Burger Menu Toggle
+const burger = document.getElementById("burger");
+const navLinks = document.getElementById("nav-links");
+
+burger.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
