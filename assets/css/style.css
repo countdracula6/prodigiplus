@@ -585,4 +585,128 @@
       display: block;
     }
   }
+
+  /* ========== MOBILE VERSION ========== */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 15px 20px;
+    }
+  
+    .burger {
+      display: block;
+      font-size: 28px;
+    }
+  
+    .nav-links {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      background: var(--background-black);
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 0;
+      display: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.8);
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      margin: 4px 0;
+    }
+  
+    .nav-links li a {
+      font-size: 16px;
+      padding: 10px;
+      text-align: center;
+      width: 100%;
+      display: block;
+    }
+  
+    /* Hero Section */
+    .hero {
+      min-height: 90vh;
+      padding: 80px 20px 40px;
+      background-position: center center;
+      background-size: cover;
+      text-align: center;
+    }
+  
+    .hero-content h1 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+  
+    .hero-content p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  
+    .cta-btn {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  
+    /* Sections (About, Services, Portfolio, Newsletter) */
+    section {
+      padding: 60px 20px;
+    }
+  
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+  
+    .section-content p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  
+    .services-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  
+    .service-card {
+      padding: 20px;
+    }
+  
+    /* Newsletter */
+    .newsletter-form input[type="email"] {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .newsletter-form button {
+      width: 100%;
+    }
+  
+    /* Map */
+    .map-section iframe {
+      height: 300px;
+      border-radius: 8px;
+    }
+  
+    /* Footer */
+    footer {
+      font-size: 12px;
+      padding: 15px 10px;
+    }
+  
+    /* Floating Theme Toggle */
+    .theme-toggle-btn {
+      bottom: 20px;
+      right: 20px;
+      width: 45px;
+      height: 45px;
+      font-size: 20px;
+    }
+  }
+  
   
