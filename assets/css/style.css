@@ -601,21 +601,24 @@
     }
   
     .nav-links {
-      position: absolute;
-      top: 60px;
-      right: 0;
-      width: 100%;
-      background: var(--background-black);
-      flex-direction: column;
-      align-items: center;
-      padding: 10px 0;
-      display: none;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.8);
-    }
-  
-    .nav-links.active {
-      display: flex;
-    }
+        position: absolute;
+        top: 60px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        max-width: 300px; /* 💥 New! */
+        background: rgba(0,0,0,0.95);
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        display: none;
+        border-radius: 10px; /* Optional: softer box */
+      }
+      
+      .nav-links.active {
+        display: flex;
+      }
+      
   
     .nav-links li {
       margin: 4px 0;
